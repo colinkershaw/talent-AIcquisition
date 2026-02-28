@@ -46,7 +46,7 @@ The test suite covers: index drift recovery, bold/italic snap-out, header collis
 
 ## Sample Output
 
-See [`sample/assessment_report.html`](sample/assessment_report.html) — open directly in a browser. Generated against a fictional candidate (`Alex Chen`) and a real job description. No setup required to see what the tool produces.
+See [`index.html`](index.html) — open directly in a browser. Generated against a fictional candidate (`John Smith`) and a real job description. No setup required to see what the tool produces.
 
 ## Setup
 
