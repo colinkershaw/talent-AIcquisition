@@ -67,4 +67,4 @@ The core pipeline works. Hosting, authentication, and a candidate-facing UI are 
 
 ## License
 
-MIT
+Apache 2.0
