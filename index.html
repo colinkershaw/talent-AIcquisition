@@ -1,1 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Candidate Assessment: John Smith</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #333; max-width: 850px; margin: 40px auto; padding: 20px; background-color: #f4f7f6; }
+        .card { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        h3 { color: #1a73e8; margin-top: 25px; border-bottom: 2px solid #e8f0fe; padding-bottom: 10px; font-size: 1.3rem; }
+        p { margin: 12px 0; }
+        ul { margin: 10px 0; padding-left: 25px; }
+        li { margin-bottom: 8px; }
+        strong { color: #000; }
 
+        /* Obvious Numbered Citation */
+        .citation {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #1a73e8;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-left: 6px;
+            position: relative;
+            vertical-align: top;
+            transition: transform 0.2s;
+        }
+        .citation:hover { transform: scale(1.2); }
+        .citation:hover .popup { visibility: visible; opacity: 1; }
+
+        /* Information Popup */
+        .popup {
+            visibility: hidden;
+            width: 500px;
+            background-color: #ffffff;
+            color: #333;
+            text-align: left;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            padding: 20px;
+            position: absolute;
+            z-index: 100;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-weight: normal;
+            line-height: 1.4;
+            cursor: default;
+        }
+        .popup-title {
+            display: block;
+            font-weight: bold;
+            color: #1a73e8;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .popup-content {
+            display: block;
+            font-size: 13px;
+            max-height: 250px;
+            overflow-y: auto;
+            color: #4b5563;
+            font-style: italic;
+        }
+        .popup::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -8px;
+            border-width: 8px;
+            border-style: solid;
+            border-color: #fff transparent transparent transparent;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <p>John Smith presents as an exceptionally strong candidate for a <strong>Staff-level SRE/Platform Engineer</strong> role at Ashby. His 25+ years of experience align with the &ldquo;Staff&rdquo; seniority requirement, characterized by end-to-end project ownership, high-level architectural decision-making, and a &ldquo;paved road&rdquo; philosophy.</p>
+
+    <p>Below is an evidence-based assessment of his fit against the Job Description (JD):</p>
+
+    <h3>1. The &ldquo;Paved Road&rdquo; & Platform Engineering Philosophy</h3>
+    <p>The JD seeks someone who builds a &ldquo;paved road&rdquo; for other engineers. </p>
+    <ul>
+        <li><strong>Evidence:</strong> John’s career is defined by &ldquo;eliminating environmental setup friction&rdquo; and &ldquo;increasing business process speed and repeatability.&rdquo; He has led Infrastructure-as-Code (IaC) execution by automating Azure IaaS/PaaS provisioning using ARM templates. <span class="citation">1<div class="popup"><div class="popup-title">John_Smith_Résumé_Exec_Summary_Format.md</div><div class="popup-content">Led Infrastructure-as-Code (IaC) execution by automating Azure IaaS / PaaS provisioning with ARM templates, enabling consistency and eliminating environmental setup friction for external teams...</div></div></span></li>
+        <li><strong>Alignment:</strong> His &ldquo;Core Philosophy&rdquo; explicitly states that &ldquo;Automation increases quality via consistency&rdquo; and &ldquo;Quality increases agility,&rdquo; which directly mirrors Ashby’s goal of building a platform that lets engineering teams &ldquo;safely take to the moon and back.&rdquo;</li>
+    </ul>
+
+    <h3>2. High-Scale & Mission-Critical Reliability</h3>
+    <p>The JD emphasizes the need for a &ldquo;future-proof platform&rdquo; that can handle millions of data points and critical safety/confidentiality.</p>
+    <ul>
+        <li><strong>Evidence:</strong> John served as the Senior Solution Architect for a <strong>$65M Pipeline Integrity program</strong> at XT Energy, integrating systems to provide data for critical safety decisions across 90,000+ km of pipeline. <span class="citation">2<div class="popup"><div class="popup-title">John_Smith_Résumé_Exec_Summary_Format.md</div><div class="popup-content">Solution Architect partnering with cross-functional teams on the $65M Pipeline Integrity program (supporting business operations with $1B annual budget) and other high-impact initiatives...</div></div></span> He also architected a cloud-based <strong>Monte Carlo simulator</strong> for pipeline corrosion prediction. <span class="citation">2<div class="popup"><div class="popup-title">John_Smith_Résumé_Exec_Summary_Format.md</div><div class="popup-content">Architected a flexible cloud-based Monte Carlo simulator for pipeline corrosion prediction...</div></div></span></li>
+        <li><strong>Alignment:</strong> He is comfortable with &ldquo;doomsday design&rdquo; and high-stakes reliability. His experience with enterprise-scale systems (XT Energy, Heeler Energy, Anystate) ensures he can handle Ashby’s growth and the &ldquo;inflection point&rdquo; of scaling.</li>
+    </ul>
+
+    <h3>3. Technical Rigor & &ldquo;The Swiss Army Knife&rdquo;</h3>
+    <p>Ashby is looking for an engineer who codes and can jump between SQL, TypeScript, and infrastructure debugging.</p>
+    <ul>
+        <li><strong>Evidence:</strong>
+            <ul>
+                <li><strong>Coding:</strong> John is proficient in <strong>TypeScript, Node.js</strong>, JavaScript, Ruby, and Java. <span class="citation">1<div class="popup"><div class="popup-title">John_Smith_Résumé_Exec_Summary_Format.md</div><div class="popup-content">Development Tools (Java, .NET / C#, Node.js / JavaScript / TypeScript, Ruby, Oracle, SQL Server, Git, PowerShell, Regex, JSON)</div></div></span></li>
+                <li><strong>SQL Mastery:</strong> He has extensive experience with Oracle, SQL Server, and PL/SQL. Notably, he &ldquo;engineered full automation of database DDL extraction and PL/SQL compilation,&rdquo; <span class="citation">4<div class="popup"><div class="popup-title">John_Smith_Résumé_Exec_Summary_Format.md</div><div class="popup-content">Engineered full automation of database DDL extraction and PL/SQL compilation with CI/CD, resolving a high-friction bottleneck...</div></div></span> which directly maps to Ashby’s need for optimizing their DSL-to-SQL compiler.</li>
+                <li><strong>Debugging:</strong> He is an expert in &ldquo;Advanced Diagnostics&rdquo; using KQL and App Insights to resolve production issues in cloud-native microservices.</li>
+            </ul>
+        </li>
+        <li><strong>Alignment:</strong> He fits the &ldquo;Swiss army knife&rdquo; persona, having handled everything from &ldquo;database optimization&rdquo; to &ldquo;advanced diagnostics&rdquo; and &ldquo;API design (GraphQL).&rdquo;</li>
+    </ul>
+
+    <h3>4. Ownership & Autonomy (Staff-Level Leadership)</h3>
+    <p>Ashby requires engineers who &ldquo;run their projects&rdquo; with &ldquo;minimal oversight.&rdquo;</p>
+    <ul>
+        <li><strong>Evidence:</strong> Throughout his tenure at <strong>XTW</strong> and as a <strong>Solution Architect</strong>, John has a track record of driving large-scale initiatives without needing prodding. He transitioned organizations (like Maya) from &ldquo;functional silos to outcome-oriented multidisciplinary teams.&rdquo; <span class="citation">1<div class="popup"><div class="popup-title">John_Smith_Résumé_Exec_Summary_Format.md</div><div class="popup-content">Pioneered the organizational shift at Maya from functional silos to outcome-oriented multidisciplinary teams...</div></div></span></li>
+        <li><strong>Alignment:</strong> He specifically avoids the &ldquo;lowest common denominator&rdquo; approach, preferring to &ldquo;coach up skills&rdquo; rather than use process as a crutch. His background as a &ldquo;Technical Leader&rdquo; and &ldquo;Practice Lead&rdquo; suggests he would excel in Ashby’s low-process, high-accountability environment.</li>
+    </ul>
+
+    <h3>5. Communication & Culture</h3>
+    <p>Ashby values async, written communication and deliberate collaboration.</p>
+    <ul>
+        <li><strong>Evidence:</strong> John holds a <strong>Bachelor of Arts in English</strong><span class="citation">4<div class="popup"><div class="popup-title">John_Smith_Résumé_Exec_Summary_Format.md</div><div class="popup-content">University of Calgary: Bachelor of Arts, English</div></div></span>, providing a rare bridge between technical depth and high-quality written communication. His experience as a &ldquo;Process Mentor&rdquo; and &ldquo;Practice Leader&rdquo; indicates he can share best practices effectively across a distributed team.</li>
+        <li><strong>Alignment:</strong> He is a &ldquo;lifelong learner&rdquo; (demonstrated by his recent focus on <strong>GenAI/LLM tools</strong>) and has experience on interview panels choosing colleagues—both of which are required by the JD.</li>
+    </ul>
+
+    <h3>Potential Areas for Calibration</h3>
+    <ul>
+        <li><strong>Cloud Stack:</strong> John’s recent deep expertise is in <strong>Azure</strong> (Kubernetes, Docker, Cosmos DB), whereas Ashby uses <strong>AWS</strong>. However, the JD explicitly states they do not require previous experience in their specific stack.</li>
+        <li><strong>Seniority:</strong> At 25+ years of experience, John is highly senior. <span class="citation">3<div class="popup"><div class="popup-title">John_Smith_Résumé_Exec_Summary_Format.md</div><div class="popup-content">Technical leader with 25+ years of experience transforming delivery organizations and executing complex cloud modernization...</div></div></span> He would likely function at a &ldquo;Staff&rdquo; or &ldquo;Principal&rdquo; level.</li>
+    </ul>
+
+    <h3>Conclusion</h3>
+    <p>John Smith is a <strong>&ldquo;rigorous, problem-hungry platform engineer&rdquo;</strong> who embodies the Ashby philosophy. His history of automating away friction in massive enterprise environments and his deep roots in Agile/XP engineering make him a premium fit.</p>
+</div>
+</body>
+</html>
