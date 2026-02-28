@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "name": "google-ai-sandbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest",
+    "test:run": "vitest run"
+  },
+  "dependencies": {
+    "@google/genai": "^1.40.0",
+    "dotenv": "^17.2.4",
+    "marked": "^17.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3",
+    "vite-tsconfig-paths": "^6.1.0",
+    "vitest": "^4.0.18"
+  },
+  "private": true
+}

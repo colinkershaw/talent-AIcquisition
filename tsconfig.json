@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    /* Target & Module */
+    "target": "es2022",
+    "module": "esnext",
+    "moduleResolution": "Bundler", // 2026 Standard
+
+    /* Path Aliasing */
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["src/*"],
+      "@tests/*": ["tests/*"]
+    },
+
+    /* Strictness & Reliability */
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    /* Output */
+    "outDir": "dist",
+    "resolveJsonModule": true
+  },
+  "include": ["src", "tests"] // Must include 'tests' to use aliases in test files
+}

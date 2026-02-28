@@ -1,0 +1,131 @@
+export const JOB_DESCRIPTION = `
+We’re looking for a curious, rigorous, problem-hungry platform engineer (who codes!) to carry the ball as we bring Ashby to the big leagues. Ashby builds software that lets talent teams build an efficient, delightful, respectful hiring process. Similarly, you’re an engineer who wants to build a “paved road” that excellent engineering teams can safely take to the moon and back.
+
+We have notable customers like Notion, Linear, Shopify, and Snowflake. Our growth and retention metrics are best-in-class among our peers: we have tens of millions in ARR, growing >100% year over year, over 2500 customers, very low churn, and many years of runway. We’ll share more details once we meet, but you now probably have a good idea as to why we're hiring for this role 😅.
+
+We’ve listed this role twice: as a Platform Engineer and Site Reliability Engineer – our team does both, and we are open to candidates who lean towards one or the other.
+
+About the role and how we work
+Hi 👋 I’m Colin, Head of EMEA Engineering. I’ve spent a number of years leading engineering teams in startups, and that has always included being close to infrastructure teams - no matter what name they’ve worn (SRE, infrastructure, platform, etc). I’ve got my hands dirty building the initial infrastructure for startups and know the value a talented infrastructure engineer brings. The rigour, the discipline, the peace and quiet when everything just hums along.
+
+Our infrastructure is in a good place for now. Nothing is static. Ashby continues to grow rapidly, putting strain on our existing infrastructure. We’re always looking to give our customers more powerful hiring software, and building new product features often requires new pieces of infrastructure.
+
+Having herded plenty of snowflakeservers in the past, I’ve learned there’s a better way. I (and Ashby) place a lot of value on code-as-infrastructure. As a Platform Engineer at Ashby, you’ll get to dive into scaling problems, add new capabilities to our platform, and think about how our entire team interacts with infrastructure. All our own engineers own their projects end-to-end and ship with minimal oversight. We don’t put roadblocks to ensure security when common sense will do and we don’t build processes like change management boards around the lowest common denominator. But with great power comes great responsibility: we handle personal and confidential data about some of the biggest decisions we ever make at work. As we grow, more and bigger customers rely on us to be reliable and secure and how we operate internally will need to evolve.
+
+We’re at an inflection point where our ability to scale and deliver a seamless experience has a make-or-break impact – we have some of the fastest growing companies using our platform every day to hire hundreds of people per month. We need someone like you to make good decisions, debug thorny issues, and build us a future-proof platform that can withstand this scale. Our small but mighty infrastructure team has set up a secure and simple environment (we don’t believe in spinning up a new service unless necessary!) for our growing product team to build in. That’s where you come in: you, too, will own projects end-to-end and have an impact on core parts of the Ashby developer and user experience. For instance, you could work on:
+
+Optimize our homegrown ultra-dynamic recruiting DSL-to-SQL compiler, and create tools to help developers do so
+
+Create automated guardrails for the security and privacy of our customer data
+
+Help our developers ship features fast through canary deploys, gradual rollouts and feature flags, while keeping complexity manageable and reducing downtime
+
+Work with the business and the engineering team to define SLOs and implement the corresponding SLIs.
+
+Ensure all communication with external services supports retries and circuit-breakers.
+
+Implement the infrastructure to support an event-driven architecture and data warehouse.
+
+We’re looking for someone who can build systems that an engineer would like to work with: mature and boring but open-minded and approachable. We have to balance reliability with flexibility. Software and its availability are now mission critical to almost every working professional. To be in an SRE in today’s world, you have to be extremely comfortable evaluating risk, those you take and those others take.
+
+Why you should or shouldn’t apply
+You should apply if:
+
+You never stop. You get weirdly obsessed about a problem that doesn’t yet make sense, turn it every which way in your head until the explanation dawns. You’ll search every rock, inventory every clue, hunt every mismatch. We do that, too - together we’ll be armed with state-of-the-art monitoring tools and an impressive amount of data, and join you in the adventure.
+
+You don’t take shortcuts. You’re speaking up for the future user, the edge case, the doomsday design. You know product engineers want to build it with you, and see them as allies, where you give them the power and knowledge to access greater things.
+
+You’re someone who cares about what you do and the team you do it with, and want to work with others who do as well. You’ll be on interview panels choosing your next colleagues, and you’ll take that seriously. You only want to work with people who make you better, and want to make you better.
+
+You’ve built infrastructure at a slightly later stage than Ashby is at - you know how to deal with millions of data points, have seen great (or not great) infrastructure make or break customer experience, and have automated everything from provisioning to monitoring and release process.
+
+You’re a Swiss army knife (all nationalities welcome ;) ). You’ll get every hard problem the company faces. You’ll get to do infrastructure updates, security enforcements, database optimization, Kubernetes debugging, and digging through Typescript traces figuring out what doesn’t work. You probably don’t feel like an expert at at least some of that... and that appeals to you.
+
+All that makes for a pretty specific kind of role, and the job isn’t to everyone’s tastes! You should not apply if:
+
+You don’t want to make your own decisions on what is the best paved road to build for Ashby, and expect a lead or manager to make the final call on what that is. Our leads (and managers) give ample commentary and feedback on technical decisions and how they’re made, but you ship what you want to build and are accountable for it.
+
+You hate SQL. We have a lot of features built around making the best out of data, and our platform engineers also sometimes dive into a gnarly report or advise engineers on a more performant data model to use.
+
+You don’t want to code. Our SREs are some of our best software engineers and they are just as responsible for the application as the other engineering teams - albeit at a platform level. Reviewing code and submitting code changes will be part of your day to day.
+
+Your primary mode of communicating best practices to engineers is live meetings. We’re a very async culture and written communication (and code) is how changes get made. As an Ashby SRE, you will need to share new tooling and best practices with engineers faster than your next meeting opportunity will take you.
+
+You’ve never delivered a project, on your own, without someone prodding you for updates. We have no project or delivery managers to fill your calendar with busy work, but the flip side is you have to do your project management, seek the help you need to get unstuck and cut scope when it’s worthwhile.
+
+Technology Stack
+I’m sharing our tech stack with the caveat that we don’t require previous experience in it: TypeScript (frontend & backend), Node.js, React, Apollo GraphQL, Postgres, Redis.
+
+We use Datadog and Sentry on 100% cloud-based (AWS) infra. We take developer experience and reliability seriously: all engineers are on call in a follow-the-sun model, and everyone contributes to developer tooling.
+
+What We’re Building
+As engineers, we are used to tooling that makes us better at what we do. When we started Ashby, we saw the opposite with Talent Acquisition software. Recruiting teams were leveling up how they did their work, but instead of software meeting this new standard, it held them back.
+
+Scheduling a final round is an excellent example. Recruiting teams wanted to schedule candidates faster, track interviewer preparation and quality, and do it with half the headcount. A recruiter needed to manually collect availability from the candidate, identify qualified interviewers, perform “Calendar Tetris” to find who is available to interview the candidate, schedule on the earliest date possible, and make any last-minute adjustments as availability changed. They must do this while considering the interview load on each individual and whether interviewers need to be trained and shadowing others. 🥵 TA software didn’t help.
+
+As hiring managers, we know TA is a critical function, and as engineers, we know software can do better. So, we built and continue to build Ashby to give TA teams the highest standard of tooling. Software that’s intelligent and powerful. Software that provides insights into where they’re failing and automates or simplifies many of the tasks they’re underwater with. We want other functions and departments to be jealous of what TA teams can do with Ashby, and today they often are!
+
+Engineering Culture
+Our engineering culture is motivated by Abhik and Benji’s (our co-founders) belief that a small talented team, given the right environment, can build high-quality software fast (and work regular hours!). We do it through:
+
+Minimal process with ownership over decisions normally made by product and design
+
+Natural collaboration and deliberate communication
+
+Investing in tools and abstractions that give us leverage
+
+Putting effort into building a diverse team
+
+Minimal Process & Lots of Ownership
+The best engineers we’ve worked with delivered reliably magical outcomes. They took customer problems and relentlessly drove them to solutions that were not only successful but often brilliant and creative. While they did this with minimal oversight, stakeholders were never in the dark as to what was going on, and no setback was a surprise.
+
+Traditional product-development processes aren’t meant for the best engineers. Their purpose is to create consistent outcomes regardless of the engineer’s skill. But, consistency comes at the expense of an engineer’s time and freedom—both ingredients necessary to generate those magical outcomes. As a result, process stifles the best engineers and doesn’t give others the opportunity to practice the behaviors that made the best engineers the “best.”
+
+At Ashby, we want to build an environment that encourages every engineer to be their best. So, at Ashby, every Engineer runs their project. Product Managers (and Designers) build strategy, do customer research, and hand off problem briefs to Engineers. Engineers take on the rest: they research the problem, write product specs, build wireframes, and implement their solution end-to-end. We rely on engineers, not process, to push information outward to the relevant folks (e.g., Product Managers) and pull folks in to help (e.g., Designers, Infra). It’s a new level of ownership for many engineers, but we’d rather an engineer fail a bit and coach up their skills than use process as a crutch. Not everyone succeeds in our culture, but those who do thrive.
+
+Collaboration is Natural & Communication is Deliberate
+Our engineering team consists of lifelong learners who are talented but also humble and kind (meet them here!). These attributes create an environment where collaboration happens naturally. We combine this with research, prototyping, and written proposals to see around corners and get feedback from the team across time zones. Focus time is something that we hold sacred, and, with thoughtful and deliberate communication, engineers are in <2h meetings per week (Abhik wrote about it here).
+
+To drive it home, here's a recent calendar of an engineer who has been with us for over 4 years:
+
+
+We also meet in person at least twice a year, once as a department and once as a company. You also have a small budget to meet up with folks in your city/region.
+
+Increase Leverage, not Team Size
+We built Ashby with the quality, breadth, and depth that many customers would expect from much larger teams over larger time scales. We’ve done this through investment in:
+
+Great developer tooling. Our CI/CD takes ~10m, and we deploy at least 15x a day. A debugger that works out of the box. Everyone on the team has contributed to our developer experience 💪🏾.
+
+Building blocks to create powerful and customizable products fast. At the core of Ashby is a set of common components (analytics modeling and query language, policy engine, workflow engine, design system) that we constantly improve. Each improvement to a common component cascades throughout our app (short video below).
+
+Here’s an impromptu quote from Arjun in our company Slack of what it’s like to build a feature at Ashby:
+
+
+And a demo of one of these building blocks:
+
+
+Put Effort into Diversity
+Diverse teams drive innovation and better outcomes. Having seen my mother and partner build their careers as minority women in non-diverse fields, I want to make sure Ashby creates opportunities for the next generation of engineers from underrepresented groups.
+
+Today, 21% of engineers at Ashby are from underrepresented groups. It’s not great, and we are taking conscious steps to improve, like sourcing diverse candidates, providing generous paid family leave, no leetcode interviews, and more.
+
+Interview Process
+At Ashby, our team and interview process want to help you show your best self. We’ll dive into past projects and simulate working together via pair programming, writing product and tech specs collaboratively, and talking through decisions. There are no leetcode or whiteboard exercises.
+
+Our interview process is three rounds:
+
+Introduction call with Hiring Manager (15 to 30m, live)
+
+A technical screen where we pair in our actual codebase (1h, live)
+
+Three non-coding interviews that focus on technical design, debugging incidents, and infrastructure (3h 15m, live can be split across multiple days)
+
+Depending on our leadership team’s bandwidth, we may start with an additional 30m screen with a recruiter.
+
+Your hiring manager will be your main point of contact and prep you for interviews. Each round will have written guidance so you know what to expect (you’ll need minimal preparation). You’ll meet 4 to 6 people in engineering (with 5-15 minutes in each interview to ask them questions). If we don’t give an offer, we’ll provide feedback!
+
+Your First Three Months at Ashby
+We want an exceptional onboarding experience for every new hire. At Ashby, your dev environment is set up with a single script, you push your first product change on day one, and you spend the rest of your time shipping product changes that give you a tour of our codebase and best practices. The product changes increase in scope and ambiguity from simple copy changes to the delivery of a prominent, impactful feature. Your manager will do a 30, 60, and 90-day review to give feedback and calibrate on how we work together.
+
+It’s a team effort to get you successfully onboarded; you’ll have a peer paired with you to answer questions, pair program, and check in often to see if you need help. The rest of the team will run training sessions on our culture, product, engineering process, and technical architecture.
+`.trim();
