@@ -20,6 +20,8 @@ A RAG pipeline that grounds candidate assessment in a configurable document stor
 
 The citation engine solves this with an anchor-search approach rather than trusting absolute indices. The test suite documents the failure modes it was built to prevent.
 
+**Note: This is a Work In Progress** 
+
 ## Architecture
 
 ```
