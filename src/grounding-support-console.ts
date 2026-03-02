@@ -5,4 +5,9 @@ async function main() {
   console.log(JSON.stringify(response, null, 2));
 }
 
-await main();
+try {
+  await main();
+} catch (err) {
+  console.error("❌ Assessment failed:", err);
+  process.exit(1);
+}
