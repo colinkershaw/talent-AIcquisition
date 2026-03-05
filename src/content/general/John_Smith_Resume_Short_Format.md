@@ -37,7 +37,7 @@ Technical leader with 25+ years of experience transforming delivery organization
 * Collaborated with leadership to scale SA capacity from 2 to 4 teams by onboarding 2 SAs and establishing how teams integrate, serving as primary SA for 2 teams plus the mission-critical data migration team.  
 * Led the solution architecture assessment for Mandate Expansion (geothermal and critical minerals), leveraging deep domain expertise and strong stakeholder rapport to inform new regulatory solution.
 
-**Solution Architect | Meridian Midstream Canada | Calgary, AB | Jan 2019 – Apr 2020**
+**Solution Architect | Prairie Midstream Canada | Calgary, AB | Jan 2019 – Apr 2020**
 
 * Delivered UiPath Robotic Process Automation (RPA) solutions on Azure in collaboration with developers, DevOps, and business partners, significantly increasing business process speed and repeatability.   
 * Designed and implemented Azure Modern Data Warehouse architecture for mark-to-market trade risk management.
@@ -57,7 +57,7 @@ Foundational enterprise consulting, architecture, and development expertise. Cha
 
 **Highlights:**
 
-* **Tundra Energy (2013 – 2015\)**: Senior Solution Architect for $9M Corporate Responsibility program. Integrated cloud-based SaaS emergency notification system with corporate directory. Led RFx processes and collaborated with Procurement and Legal to finalize vendor contracts.  
+* **Heeler Energy (2013 – 2015\)**: Senior Solution Architect for $9M Corporate Responsibility program. Integrated cloud-based SaaS emergency notification system with corporate directory. Led RFx processes and collaborated with Procurement and Legal to finalize vendor contracts.  
 * **Pinnacle Financial & Coastline Insurance (2004 – 2005, Meridian Consulting)**: Resolved critical interteam integration issues across siloed CORBA and BizTalk teams at Coastline Insurance. Mentored teams on XP practices in Chicago and India.  
 * **Tundra Energy & Apex Pipeline (2002 – 2003, Meridian Consulting)**: Engineered full automation of database DDL extraction and PL/SQL compilation with CI/CD, resolving a high-friction bottleneck. Automated functional, stress, load, and data migration validation testing to improve quality and visibility for business.  
 * **Apex Pipeline (2000 – 2001\)**: Championed early adoption of Refactoring and automated unit testing with JUnit.

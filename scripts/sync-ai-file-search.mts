@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 import dotenv from "dotenv";
 
-dotenv.config({ path: path.join(process.cwd(), ".env.local") });;
+dotenv.config({ path: path.join(process.cwd(), ".env.local") });
 
 // 1. COMMUNICATIVE SAFETY CHECK
 // This ensures we abort early with a clear message if the key is missing.
@@ -71,7 +71,15 @@ try {
         file: fileBlob,
         // mimeType: mimeType, // Hard-coding this prevents the 400 rejection
         fileSearchStoreName: storeName,
-        config: { displayName: fileName }
+        config: {
+          displayName: fileName,
+          chunkingConfig: {
+            whiteSpaceConfig: {
+              maxTokensPerChunk: 200,
+              maxOverlapTokens: 20
+            }
+          }
+        }
       });
 
       while (!op.done) {

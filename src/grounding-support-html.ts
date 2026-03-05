@@ -5,15 +5,15 @@ import * as fs from 'fs';
 async function main() {
   console.log("🤖 Running talent assessment...");
 
-  const response = await getGroundedResponse("How would John fit the role of a Staff-level SRE?");
+  const response = await getGroundedResponse("How would the candidate fit the role?");
 
   // Generate the interactive HTML
   const html = generateAssessmentHtml(response);
 
   // Save to disk
-  fs.writeFileSync('../index.html', html);
+  fs.writeFileSync('../assessment.html', html);
 
-  console.log("✅ Interactive HTML report generated: index.html");
+  console.log("✅ Interactive HTML report generated: assessment.html");
   console.log(JSON.stringify(response, null, 2));
 }
 
